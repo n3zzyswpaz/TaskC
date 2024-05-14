@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Котики и миска</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Эмуляция кормления котиков</h1>
+        <label for="catsNumber">Количество котиков:</label>
+        <input type="number" id="catsNumber" min="1" value="5">
+        <br>
+        <label for="maxStomachCapacity">Количество корма для сытости котика:</label>
+        <input type="number" id="maxStomachCapacity" min="1" value="2">
+        <br>
+        <label for="bowlCapacity">Вместимость миски:</label>
+        <input type="number" id="bowlMaxFoodAmount" min="1" value="5">
+        <br>
+        <label for="timeToEat">Время, необходимое для поедания корма (в секундах):</label>
+        <input type="number" id="timeToEat" min="1" value="4000">
+        <br>
+        <label for="timeToRefill">Время, необходимое для пополнения миски (в секундах):</label>
+        <input type="number" id="timeToRefill" min="1" value="5000">
+        <br>
+        <button onclick="startSimulation()">Запустить эмуляцию</button>
+        <div id="output"></div>
+
+        <script src="simulator.js"></script>
+    </body>
+</html>
